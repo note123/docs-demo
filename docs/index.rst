@@ -1,7 +1,7 @@
 Welcome to Marketin Docs
 ========================
 
-`Marketin Docs`_用于维护日常文档内容.
+`Marketin Docs`_ 用于维护日常文档内容.
 
 .. _Marketin Docs: http://doc.marketin.cn/
 
