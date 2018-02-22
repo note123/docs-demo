@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# docs-demo documentation build configuration file, created by
-# sphinx-quickstart on Thu Feb 22 13:41:10 2018.
+# dcos-demo documentation build configuration file, created by
+# sphinx-quickstart on Thu Feb 22 13:56:00 2018.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'docs-demo'
+project = u'dcos-demo'
 copyright = u'2018, admin'
 author = u'admin'
 
@@ -68,7 +68,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = []
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -111,7 +111,7 @@ html_sidebars = {
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'docs-demodoc'
+htmlhelp_basename = 'dcos-demodoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -138,7 +138,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'docs-demo.tex', u'docs-demo Documentation',
+    (master_doc, 'dcos-demo.tex', u'dcos-demo Documentation',
      u'admin', 'manual'),
 ]
 
@@ -148,7 +148,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'docs-demo', u'docs-demo Documentation',
+    (master_doc, 'dcos-demo', u'dcos-demo Documentation',
      [author], 1)
 ]
 
@@ -159,7 +159,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'docs-demo', u'docs-demo Documentation',
-     author, 'docs-demo', 'One line description of project.',
+    (master_doc, 'dcos-demo', u'dcos-demo Documentation',
+     author, 'dcos-demo', 'One line description of project.',
      'Miscellaneous'),
 ]
