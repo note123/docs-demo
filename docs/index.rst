@@ -12,6 +12,7 @@ Welcome to docs-demo's documentation!
 
    steps
    spec
+   site
 
 
 
