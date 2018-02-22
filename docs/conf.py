@@ -111,10 +111,18 @@ html_static_path = ['_static']
 # html_sidebars = {}
 
 
-# Language to be used for generating the HTML full-text search index. 
-# This defaults to the global language selected with language. 
-# If there is no support for this language, "en" is used which selects the English language.
+# Language to be used for generating the HTML full-text search index.
+# Sphinx supports the following languages:
+#   'da', 'de', 'en', 'es', 'fi', 'fr', 'hu', 'it', 'ja'
+#   'nl', 'no', 'pt', 'ro', 'ru', 'sv', 'tr', 'zh'
+#
 html_search_language = 'zh'
+
+# A dictionary with options for the search language support, empty by default.
+# 'ja' uses this config value.
+# 'zh' user can custom change `jieba` dictionary path.
+#
+# html_search_options = {'type': 'default'}
 
 
 # -- Options for HTMLHelp output ------------------------------------------
