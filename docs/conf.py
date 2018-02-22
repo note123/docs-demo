@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
 # docs-demo documentation build configuration file, created by
-# sphinx-quickstart on Thu Feb 22 14:36:13 2018.
+# sphinx-quickstart on Thu Feb 22 14:49:46 2018.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -16,8 +16,8 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
+import os
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -82,7 +82,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -163,6 +163,3 @@ texinfo_documents = [
      author, 'docs-demo', 'One line description of project.',
      'Miscellaneous'),
 ]
-
-
-
