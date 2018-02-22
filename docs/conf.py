@@ -107,6 +107,12 @@ html_static_path = ['_static']
 # html_sidebars = {}
 
 
+# Language to be used for generating the HTML full-text search index. 
+# This defaults to the global language selected with language. 
+# If there is no support for this language, "en" is used which selects the English language.
+html_search_language = ['en', 'zh']
+
+
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
