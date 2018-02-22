@@ -10,6 +10,9 @@ Welcome to docs-demo's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   steps
+   spec
+
 
 
 Indices and tables
