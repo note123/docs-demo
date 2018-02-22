@@ -82,7 +82,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -163,3 +163,142 @@ texinfo_documents = [
      author, 'docs-admin', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+
+
+
+###########################################################################
+#          auto-created readthedocs.org specific configuration            #
+###########################################################################
+
+
+#
+# The following code was added during an automated build on readthedocs.org
+# It is auto created and injected for every build. The result is based on the
+# conf.py.tmpl file found in the readthedocs.org codebase:
+# https://github.com/rtfd/readthedocs.org/blob/master/readthedocs/doc_builder/templates/doc_builder/conf.py.tmpl
+#
+
+
+import sys
+import os.path
+from six import string_types
+
+from sphinx import version_info
+
+# Get suffix for proper linking to GitHub
+# This is deprecated in Sphinx 1.3+,
+# as each page can have its own suffix
+if globals().get('source_suffix', False):
+    if isinstance(source_suffix, string_types):
+        SUFFIX = source_suffix
+    else:
+        SUFFIX = source_suffix[0]
+else:
+    SUFFIX = '.rst'
+
+# Add RTD Static Path. Add to the end because it overwrites previous files.
+if not 'html_static_path' in globals():
+    html_static_path = []
+if os.path.exists('_static'):
+    html_static_path.append('_static')
+html_static_path.append('/root/rtd/checkouts/readthedocs.org/readthedocs/templates/sphinx/_static')
+
+# Add RTD Theme only if they aren't overriding it already
+using_rtd_theme = False
+if 'html_theme' in globals():
+    if html_theme in ['default']:
+        # Allow people to bail with a hack of having an html_style
+        if not 'html_style' in globals():
+            import sphinx_rtd_theme
+            html_theme = 'sphinx_rtd_theme'
+            html_style = None
+            html_theme_options = {}
+            if 'html_theme_path' in globals():
+                html_theme_path.append(sphinx_rtd_theme.get_html_theme_path())
+            else:
+                html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+            using_rtd_theme = True
+else:
+    import sphinx_rtd_theme
+    html_theme = 'sphinx_rtd_theme'
+    html_style = None
+    html_theme_options = {}
+    if 'html_theme_path' in globals():
+        html_theme_path.append(sphinx_rtd_theme.get_html_theme_path())
+    else:
+        html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+    using_rtd_theme = True
+
+if globals().get('websupport2_base_url', False):
+    websupport2_base_url = 'http://docs.marketin.cn/websupport'
+    if 'http' not in settings.MEDIA_URL:
+        websupport2_static_url = '/static/'
+    else:
+        websupport2_static_url = '/media//static'
+
+
+#Add project information to the template context.
+context = {
+    'using_theme': using_rtd_theme,
+    'html_theme': html_theme,
+    'current_version': "latest",
+    'version_slug': "latest",
+    'MEDIA_URL': "/media/",
+    'PRODUCTION_DOMAIN': "docs.marketin.cn",
+    'versions': [
+    ("latest", "/en/latest/"),
+    ],
+    'downloads': [
+    ("pdf", "//docs.marketin.cn/projects/docs-demo/downloads/pdf/latest/"),
+    ("htmlzip", "//docs.marketin.cn/projects/docs-demo/downloads/htmlzip/latest/"),
+    ("epub", "//docs.marketin.cn/projects/docs-demo/downloads/epub/latest/"),
+    ],
+    'subprojects': [
+    ],
+    'slug': 'docs-demo',
+    'name': u'docs-demo',
+    'rtd_language': u'en',
+    'programming_language': u'words',
+    'canonical_url': 'http://docs.marketin.cn/docs/docs-demo/en/latest/',
+    'analytics_code': 'None',
+    'single_version': False,
+    'conf_py_path': '/source/',
+    'api_host': 'http://docs.marketin.cn',
+    'github_user': 'note123',
+    'github_repo': 'docs-demo',
+    'github_version': 'master',
+    'display_github': True,
+    'bitbucket_user': 'None',
+    'bitbucket_repo': 'None',
+    'bitbucket_version': 'master',
+    'display_bitbucket': False,
+    'gitlab_user': 'None',
+    'gitlab_repo': 'None',
+    'gitlab_version': 'master',
+    'display_gitlab': False,
+    'READTHEDOCS': True,
+    'using_theme': (html_theme == "default"),
+    'new_theme': (html_theme == "sphinx_rtd_theme"),
+    'source_suffix': SUFFIX,
+    'user_analytics_code': '',
+    'global_analytics_code': 'None',
+
+    'commit': '438f6965',
+
+}
+
+
+
+
+if 'html_context' in globals():
+    html_context.update(context)
+else:
+    html_context = context
+
+# Add custom RTD extension
+if 'extensions' in globals():
+    extensions.append("readthedocs_ext.readthedocs")
+else:
+    extensions = ["readthedocs_ext.readthedocs"]
