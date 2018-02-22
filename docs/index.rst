@@ -1,19 +1,20 @@
-.. docs-demo documentation master file, created by
-   sphinx-quickstart on Thu Feb 22 16:01:21 2018.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to Marketin Docs
+========================
 
-用户文档
-=======
+`Marketin Docs`_用于维护日常文档内容.
+
+.. _Marketin Docs: http://doc.marketin.cn/
+
+文档由以下三部分组成:
+
+* :ref:`前端规范`
+* :ref:`后台规范`
+* :ref:`流程规范`
+
+.. _前端规范:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: 前端规范
 
-
-
-技术文档
-=======
-
-* :ref:`genindex`
-* :ref:`search`
+   agularjs_docs
