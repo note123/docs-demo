@@ -17,4 +17,4 @@ Welcome to Marketin Docs
    :maxdepth: 2
    :caption: 前端规范
 
-   agularjs_docs
+   angularjs_docs
