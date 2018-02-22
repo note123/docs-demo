@@ -18,3 +18,13 @@ Welcome to Marketin Docs
    :caption: 前端规范
 
    angularjs_docs
+
+.. _后台规范:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 后台规范
+
+   marketin_core_spec
+
+   
