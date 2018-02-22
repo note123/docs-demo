@@ -123,6 +123,7 @@ html_search_language = 'zh'
 # 'zh' user can custom change `jieba` dictionary path.
 #
 # html_search_options = {'type': 'default'}
+html_search_options = {'dict': '/root/rtd/dic/jieba.txt'}
 
 
 # -- Options for HTMLHelp output ------------------------------------------
