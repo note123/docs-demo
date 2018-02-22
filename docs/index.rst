@@ -3,21 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to docs-demo's documentation!
-=====================================
+用户文档
+=======
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   steps
-   spec
-   site
 
 
-
-Indices and tables
-==================
+技术文档
+=======
 
 * :ref:`genindex`
 * :ref:`search`
