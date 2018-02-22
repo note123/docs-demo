@@ -4,7 +4,7 @@
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
-SPHINXPROJ    = dcos-demo
+SPHINXPROJ    = docs-demo
 SOURCEDIR     = source
 BUILDDIR      = build
 
