@@ -18,6 +18,7 @@ Welcome to Marketin Docs
    :caption: 前端规范
 
    angularjs_docs
+   javascript_spec
 
 .. _后台规范:
 
